@@ -18,11 +18,13 @@ import EditQuiz from './Pages/EditQuiz';
 import EditCourse from './Pages/EditCourse';
 import EditParent from './Pages/EditParent';
 import EditResult from './Pages/EditResult';
+import MainPage from './Pages/MainPage';
 import './App.css';
 
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<MainPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/sign-up" element={<Signup />} />
       <Route path="/dashboard" element={<Dashboard />} />
